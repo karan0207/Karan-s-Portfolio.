@@ -47,10 +47,11 @@ const AboutSection = (props) => {
   const { setSection } = props;
   return (
     <Section mobileTop>
-      <h1 className="text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0">
-        Hi, I'm
-        <br />
-        <span className="bg-white px-1 italic">Wawa Sensei</span>
+      <h1 className="text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0 mb-4">
+        
+        <p className="mb-3">Hi, I'm</p>
+        
+        <span className="bg-white px-1 italic rounded-lg">Karan</span>
       </h1>
       <motion.p
         className="text-lg text-gray-600 mt-4"
@@ -67,11 +68,12 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I make YouTube videos to help developers
+        I am an Esports Community Manager 
         <br />
-        learn how to build 3D apps
+       and Fullstack developer
       </motion.p>
       <motion.button
+      
         onClick={() => setSection(3)}
         className={`bg-indigo-600 text-white py-4 px-8 
       rounded-lg font-bold text-lg mt-4 md:mt-16`}
@@ -96,29 +98,30 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "Threejs / React Three Fiber",
-    level: 80,
+    title: "Community management",
+    level: 90,
+  },
+  {
+    title: "Discord manager",
+    level: 70,
   },
   {
     title: "React / React Native",
-    level: 90,
+    level: 80,
   },
   {
-    title: "Nodejs",
-    level: 90,
+    title: "Nodejs/Express",
+    level: 70,
   },
   {
-    title: "Typescript",
+    title: "Typescript and MongoDb",
     level: 60,
   },
-  {
-    title: "3D Modeling",
-    level: 40,
-  },
+  
 ];
 const languages = [
   {
-    title: "🇫🇷 French",
+    title: "🇮​​​​​🇳​​​​​ Hindi",
     level: 100,
   },
   {
@@ -263,7 +266,7 @@ const ProjectsSection = () => {
 };
 
 const ContactSection = () => {
-  const [state, handleSubmit] = useForm("mayzgjbd");
+  const [state, handleSubmit] = useForm("xdoqewzw");
   return (
     <Section>
       <h2 className="text-3xl md:text-5xl font-bold">Contact me</h2>
@@ -271,7 +274,7 @@ const ContactSection = () => {
         {state.succeeded ? (
           <p className="text-gray-900 text-center">Thanks for your message !</p>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} >
             <label for="name" className="font-medium text-gray-900 block mb-1">
               Name
             </label>
